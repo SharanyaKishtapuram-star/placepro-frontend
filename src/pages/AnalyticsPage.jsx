@@ -18,7 +18,7 @@ function AnalyticsPage() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "http://localhost:8182/api/analytics",
+                "https://placepro-backend-production.up.railway.app/api/analytics",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

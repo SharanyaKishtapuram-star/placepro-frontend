@@ -21,7 +21,7 @@ function RecruiterApplicationsPage() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "http://localhost:8182/api/applications/recruiter",
+                "https://placepro-backend-production.up.railway.app/api/applications/recruiter",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -56,7 +56,7 @@ function RecruiterApplicationsPage() {
             const token = localStorage.getItem("token");
 
             await axios.put(
-                `http://localhost:8182/api/applications/${id}?status=${status}`,
+                `https://placepro-backend-production.up.railway.app/api/applications/${id}?status=${status}`,
                 {},
                 {
                     headers: {

@@ -19,7 +19,7 @@ function NotificationPage() {
 
             const response =
                 await axios.get(
-                    "http://localhost:8182/api/notifications",
+                    "https://placepro-backend-production.up.railway.app/api/notifications",
                     {
                         headers: {
                             Authorization:

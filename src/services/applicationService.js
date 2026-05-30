@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8182/api/applications";
+const API_URL = "https://placepro-backend-production.up.railway.app/api/applications";
 
 export const applyJob = async (jobId) => {
 
@@ -43,7 +43,7 @@ export const getMyApplications = async () => {
 
     return axios.get(
 
-        "http://localhost:8182/api/applications/my",
+        "https://placepro-backend-production.up.railway.app/api/applications/my",
 
         {
             headers: {

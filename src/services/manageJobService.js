@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:8182/api/jobs";
+const API = "https://placepro-backend-production.up.railway.app/api/jobs";
 
 const getToken = () => {
 

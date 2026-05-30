@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL =
-    "http://localhost:8182/api/applications/my";
+    "https://placepro-backend-production.up.railway.app/api/applications/my";
 
 export const getApplications = async () => {
 

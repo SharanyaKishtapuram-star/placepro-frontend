@@ -28,7 +28,7 @@ const handleSave = async () => {
 
         await axios.post(
 
-            `http://localhost:8182/api/student/save/${userId}`,
+            `https://placepro-backend-production.up.railway.app/api/student/save/${userId}`,
 
             {
                 studentName,

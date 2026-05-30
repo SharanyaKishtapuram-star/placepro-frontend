@@ -32,7 +32,7 @@ function StudentDashboard() {
 
 const response = await axios.get(
 
-    "http://localhost:8182/api/dashboard/stats",
+    "https://placepro-backend-production.up.railway.app/api/dashboard/stats",
 
     {
         headers: {

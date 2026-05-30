@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8182/api/jobs";
+const API_URL = "https://placepro-backend-production.up.railway.app/api/jobs";
 
 export const getAllJobs = async () => {
 

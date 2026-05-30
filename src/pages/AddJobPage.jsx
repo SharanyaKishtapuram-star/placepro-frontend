@@ -16,7 +16,7 @@ const handleAddJob = async () => {
         const token = localStorage.getItem("token");
 
         await axios.post(
-            "http://localhost:8182/api/jobs",
+            "https://placepro-backend-production.up.railway.app/api/jobs",
             {
                 companyName: companyName,
                 jobRole: jobRole,

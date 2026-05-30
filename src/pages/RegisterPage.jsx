@@ -26,7 +26,7 @@ function RegisterPage() {
     try {
 
       await axios.post(
-        "http://localhost:8182/api/auth/register",
+        "https://placepro-backend-production.up.railway.app/api/auth/register",
         formData
       );
 

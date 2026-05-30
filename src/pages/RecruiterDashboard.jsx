@@ -27,7 +27,7 @@ const [selected, setSelected] =
 
         const response = await axios.get(
 
-            "http://localhost:8182/api/recruiter/dashboard",
+            "https://placepro-backend-production.up.railway.app/api/recruiter/dashboard",
 
             {
                 headers: {
