@@ -4,6 +4,8 @@ import axios from "axios";
 
 import { useNavigate } from "react-router-dom";
 
+import "./LoginPage.css";
+
 function LoginPage() {
 
     const navigate = useNavigate();
@@ -80,37 +82,52 @@ if (response.data.role === "RECRUITER") {
 
     return (
 
-        <div
-            style={{
-                display: "flex",
-                flexDirection: "column",
-                width: "300px",
-                margin: "100px auto",
-                gap: "10px"
-            }}
-        >
+        <div className="login-container">
 
-            <h1>PlacePro Login</h1>
+            <h1 className="login-title">PlacePro Login 🚀</h1>
 
-            <input
-                type="email"
-                placeholder="Enter Email"
-                value={email}
-                onChange={(e) =>
-                    setEmail(e.target.value)
-                }
-            />
+            <p
+    style={{
+        textAlign: "center",
+        marginTop: "10px"
+    }}
+>
+    Don't have an account?{" "}
+    <span
+        onClick={() => navigate("/register")}
+        style={{
+            color: "#1e3a8a",
+            fontWeight: "bold",
+            cursor: "pointer"
+        }}
+    >
+        Register Here
+    </span>
+</p>
+           <input
+    className="login-input"
+    type="email"
+    placeholder="Enter Email"
+    value={email}
+    onChange={(e) =>
+        setEmail(e.target.value)
+    }
+/>
 
-            <input
-                type="password"
-                placeholder="Enter Password"
-                value={password}
-                onChange={(e) =>
-                    setPassword(e.target.value)
-                }
-            />
+           <input
+    className="login-input"
+    type="password"
+    placeholder="Enter Password"
+    value={password}
+    onChange={(e) =>
+        setPassword(e.target.value)
+    }
+/>
 
-            <button onClick={handleLogin}>
+            <button
+    className="login-button"
+    onClick={handleLogin}
+>
 
                 Login
 

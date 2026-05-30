@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "./RegisterPage.css";
 
 function RegisterPage() {
 
@@ -43,17 +44,13 @@ function RegisterPage() {
 
   return (
 
-    <div style={{
-      display: "flex",
-      flexDirection: "column",
-      width: "300px",
-      margin: "100px auto",
-      gap: "15px"
-    }}>
+   <div className="register-container">
 
-      <h1>PlacePro Register</h1>
+      <h1 className="register-title">
+    PlacePro Register 🚀</h1>
 
       <input
+        className="register-input"
         type="text"
         name="name"
         placeholder="Enter Name"
@@ -61,6 +58,7 @@ function RegisterPage() {
       />
 
       <input
+        className="register-input"
         type="email"
         name="email"
         placeholder="Enter Email"
@@ -68,6 +66,7 @@ function RegisterPage() {
       />
 
       <input
+        className="register-input"
         type="password"
         name="password"
         placeholder="Enter Password"
@@ -75,6 +74,7 @@ function RegisterPage() {
       />
 
       <select
+        className="register-select"
         name="role"
         onChange={handleChange}
       >
@@ -82,7 +82,9 @@ function RegisterPage() {
         <option value="RECRUITER">RECRUITER</option>
       </select>
 
-      <button onClick={handleRegister}>
+      <button 
+      className="register-button"
+      onClick={handleRegister}>
         Register
       </button>
 
